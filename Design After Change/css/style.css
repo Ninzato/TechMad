@@ -1,0 +1,300 @@
+										/*RESET STYLE*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+										/*BASE STYLE*/
+@font-face {
+	font-family: Ebrima;
+	src: url('../fonts/Ebrima.woff') format('woff'),
+		 url('../fonts/Ebrima.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Candara;
+	src: url('../fonts/Candara.woff') format('woff'),
+		 url('../fonts/Candara.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Bauhaus;
+	src: url('../fonts/Bauhaus.woff') format('woff'),
+		 url('../fonts/Ba uhaus.ttf') format('truetype');
+}
+
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{
+	font-size: 16px;
+	font-family: Ebrima;
+	color: #000;
+	background-color: #fff;
+}
+
+a{
+	color: #000;
+}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.17em;}
+h4 {font-size: 1em;}
+h5 {font-size: .83em;}
+h6 {font-size: .672em;}
+										/*HEADER*/
+
+.navbar{
+	position: fixed;
+	height: 75px;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 100%);
+	z-index: 999999; 
+}
+
+.navbar ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.navbar ul a{
+	font-family: Bauhaus;
+	font-weight: 300;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #000;
+	color: #000;
+	margin: 10px 10px;
+}
+
+.navbar ul a:hover{
+	color: #00f;
+}
+
+.highlight{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.highlight-item{
+	padding: 0px;
+	font-family: Candara;
+}
+
+.highlight-item:hover{
+	opacity: 0.85;
+}
+
+.highlight-item img{
+	width: 100%;
+	float: left;
+	position: relative;
+	z-index: -5;
+}
+
+.highlight-des{
+	background: linear-gradient(0deg, rgba(2,0,36,0.75) 0%, rgba(255,255,255,0) 100%);
+	position: relative;
+	margin-top: 17%;
+	height: 75%;
+	width: 100%;
+}
+
+.highlight-des h1{
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 5%;
+	font-weight: 300;
+	color: #fff;
+}
+
+.highlight-des p{
+	position: absolute;
+	margin-top: 40%;
+	color: #fff;
+	margin-left: 5%;
+}
+
+
+										/*BODY-MAIN*/
+.main-content{
+	width: 70%;
+	margin: 0px auto;
+	margin-top: 40px;
+	box-shadow: 5px 5px 5px #000;
+}
+
+.main-content>h1{
+	text-align: right;
+	margin-right: 20px;
+}
+
+.top-story, .recent-news{
+	height: 300px;
+}
+
+.top-story:hover, .recent-news:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.top-story-text, .recent-news-text{
+	height: 100%;
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.top-story-image img, .recent-news img{
+	width: 85%;
+	float: left;
+	position: relative;
+	z-index: -5;
+	margin-left: 10%;
+}
+
+										/*FOOTER*/
+
+.wrapper {
+	width: 70%;
+	margin: 0px auto;
+}
+
+.page-footer>.wrapper::after{
+	content: '.';
+	font-size: 0px;
+	height: 1px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+.page-footer {
+	background: #111111;
+	padding-top: 25px;
+	margin-top: 40px;
+}
+
+.footer-col {
+	float: left;
+	width: 25%;
+}
+
+.page-footer h3 {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.page-footer h3::after {
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px 0;
+}
+
+.page-footer li {
+	font-size: 13px;
+	color: #999;
+	line-height: 1.6;
+}
+
+.page-footer li:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.copy {
+	color: #585858;
+	margin-top: 32px;
+}
+
+.social a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+
+.social a:hover {
+	background: #fff;
+	color: #ff0000;
+	border: 1px solid #fff;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social img{
+	width: 100%;
+	z-index: -500;
+}
