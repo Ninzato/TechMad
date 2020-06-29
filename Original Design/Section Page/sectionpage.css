@@ -1,0 +1,134 @@
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Ebrima, sans-serif;
+}
+a.main:hover{
+  text-decoration: underline;
+}
+a.link1:hover, a.link2:hover,a.link3:hover{
+  font-size: 150%;
+}
+
+.image1{
+  max-width: 100%;
+  max-height: 100%;
+  margin-right:2%;
+  width:65%;
+  height:75%;
+}
+.center{
+  margin-left: 15%;
+  margin-right: 50%
+  padding-right : 5%;
+  padding left: 5%;
+  max-width: 100%;
+  box-shadow: 3px 5px 15px 3px #a8afba;
+}
+.explanation1{
+   margin-right: 0%;
+   vertical-align: middle;
+   font-family: Cambria, sans-serif;
+   color: #00364E;
+   writing-mode: tb-rl;
+   font-size: 300%;
+}
+
+#TopArticle{
+  border-top: 0;
+  padding-bottom: 18%;
+  padding-top: 0%;
+  padding-left: 0%;
+  padding-right: 2%;
+  max-width: : 100%;
+  margin-right: 25%;
+  max-height: 100%;
+  background-color: #18a6c9;
+
+}
+.text_block{
+  position: absolute;
+  top:50%;
+  left: 20%;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  padding-left: 20px;
+  padding-right: 12.5%;
+}
+.below{
+  max-width: 100%:
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 3px 5px 15px 3px #a8afba;
+
+
+}
+#popular{
+  padding-right: 10%;
+  font-family: Cambria, sans-serif;
+  color: #00364E;
+  font-size: 125%;
+}
+#recent{
+  padding-left: 10%;
+  font-family: Cambria, sans-serif;
+  color: #00364E;
+  font-size: 126%;
+}
+#more{
+  padding-left: 3%;
+  font-family: Cambria, sans-serif;
+  color: #00364E;
+  font-size: 125%;
+}
+#image2{
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 26%;
+  width: 60%;
+  height:15%;
+}
+#image3{
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 18%;
+  padding-right: 0%;
+  width:60%;
+  height:15%;
+}
+#image4{
+  max-width: 100%;
+  max-height: 100%;
+  padding-right: 70%;
+  width:60%;
+  height:15%;
+}
+
+.link1{
+  font-family: monospace;
+  font-size: 125%;
+  color: black;
+  padding-left: 13%;
+  padding-right: 8%;
+  box-shadow: 3px 5px 5px 1px #a8afba;
+  margin-left: 25%;
+
+}
+.link2{
+  font-family: monospace;
+  font-size: 125%;
+  color: black;
+  padding-left: 13%;
+  padding-right: 8%;
+  margin-left: 17%;
+  box-shadow: 3px 5px 5px 1px #a8afba;
+}
+.link3{
+  font-family: monospace;
+  font-size: 125%;
+  color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 3px 5px 5px 1px #a8afba;
+}

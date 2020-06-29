@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>professional site</title>
+	<link rel="stylesheet" type="text/css" href="css/site-style.css">
+</head>
+
+<style>
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+
+
+
+
+
+.container nav {
+  width: 100%;
+  height: 75px;
+  background: #444759;
+  border-bottom: 1px solid #3d3f50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  list-style: none;
+  transition: all 0.5s ease;
+}
+
+Ul li a {
+Text-decoration :none;
+color: White;
+}
+
+nav ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding: 24px 15px;
+  cursor: pointer;
+  color: #eee;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+
+  position: relative;
+  color: White;
+}
+
+nav ul li:hover {
+  color: #ea3b50;
+  box-shadow: inset 0 5px #ea3b50;
+}
+
+/* sub-menu */
+
+nav ul li ul.sub-nav {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: #444759;
+  border-top: 1px solid #3d3f50;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav ul li ul.sub-nav li {
+  color: White;
+  font-size: 14px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+nav ul li ul.sub-nav li:hover {
+  color: #ea3b50;
+  box-shadow: 0 0;
+}
+
+
+nav ul li ul.sub-nav a:hover {
+  color: #ea3b50;
+  box-shadow: 0 0;
+}
+
+
+
+nav ul li:hover ul.sub-nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.clear:after,.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#body{
+	background: white;
+}
+
+.navbar{
+	height: 70px;
+	background: transparent; 
+	border-bottom: 1px solid #CECECE;
+}
+
+.container{
+	width: 1000px; 
+	margin: 0px auto;
+}
+.main-menu ul li a{
+	color: black;
+	padding: 24px 17px;
+	text-decoration: none;
+	float: left;
+	font-family:Adobe Caslon Pro Bold;
+	transition: .1s;
+} 
+
+.nav ul li{
+	display: inline-block;
+	margin-top:25px;
+	position: relative;
+	
+}
+
+ul{
+list-style-type: none;	
+}
+
+.main-menu ul li a:hover{
+background: transparent;
+border-radius: 20px;
+height: 12px;
+padding-top: 6px;
+margin-top: 22px;
+}
+
+.main-menu ul li ul{
+    position: absolute;
+    top: 61px;
+    left: 326px;
+    width: 150px;
+    height: 190px;
+    display: none;
+    background: #ffff2b;
+    box-shadow: 0px 2px 2px #c7c7c7;
+    border-radius: 8px;
+    border: 2px solid #d7d7d7;
+    z-index: 999;
+}    
+
+.main-menu ul li ul a{
+	margin: 0px;
+	transition: .1s;
+	padding: 15px;
+}
+
+
+.main-menu ul li:hover ul{
+	display: block;
+	padding: 18px 6px;
+}
+
+
+
+.backround{
+	background-image: url("9.jpg");
+	height: 650px;
+	background-size: cover; 
+	margin-bottom: 25px;
+	border-bottom: 2px solid #b0b0b0;
+}
+
+
+.head{
+    width: 600px;
+    height: 300px;
+    opacity: 135;
+    margin: 2px 5px;
+}
+
+.backround h1{
+display: inline-block;
+margin: 318px 340px;
+font-family: Adobe Garamond Pro Bold;
+font-size: 71px;
+}
+
+.column{
+	width: 33%;
+	float: left;
+
+}
+
+.column2{
+	width: 33%;
+	float: left;
+
+}
+
+.column3{
+	width: 34%;
+	float: left;
+
+}
+
+.main-content{
+	padding: 20px;
+}
+
+.midle-content{
+	padding: 20px;
+}
+
+.side-content{
+	padding: 20px;
+}
+
+.card{
+	background-image: url("9.jpg");
+	background-size: cover;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #c7c7c7;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+
+.container p{
+	text-align: center;
+	color: #000;
+}
+
+.card button{
+margin-left: 100px;
+padding: 15px;
+border-radius: 30px;
+background: #e1e10f;
+transition: .4s;
+}
+
+.card button:hover{
+	background: red;
+	color: #fff;
+}
+
+.card h2{
+	margin-left: 100px;
+
+}
+
+.card:hover{
+
+transform:translateZ(10)
+	
+} 
+
+.icon{
+float: right;
+border-radius: 50px;
+margin-top: 16px;
+margin-right: 10px;
+transition: .4s;
+}
+
+.icon:hover{
+	transform: translateY(-10px);
+}
+
+.simple-card{
+	padding: 10px 37px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 1px #c7c7c7;
+	margin-bottom: 20px;
+	clear: both;
+	background-image: url(11.jpg);
+	background-size: cover;
+	transition: .5s;
+}
+
+.simple-cover{
+	width: 1280px;
+	margin: 0px auto;
+}
+
+.simple-card:hover{
+	background-image: url("15.jpg");
+	background-size: cover;
+}
+
+.simple-card p{
+	text-align: justify;
+	padding-top: 17px;
+}
+
+
+.left-side{
+	float: left;
+	width: 630px;
+	margin-right:10px; 
+}
+
+.right-side{
+	float: left;
+	width: 630px;
+	margin-right:10px;
+}
+
+.x-card{
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #c7c7c7;
+	margin-bottom: 20px;
+}
+.x-card img{
+	width: 625px;
+	height: 550px;
+} 
+
+
+
+
+
+
+
+.footer{
+   background: #222222;
+   padding: 50px;
+   height:5%;
+margin-top:50%;
+}
+
+.footer .footer_menu{
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto 25px;
+  justify-content: space-between;
+  height:5%;
+}
+
+.footer .footer_menu .title{
+  margin-bottom: 10px;
+  color: #adadad;
+}
+
+.footer .footer_menu ul li a{
+  display: block;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.footer .footer_menu ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer .partners{
+  margin-bottom: 25px;
+}
+
+.footer .partners ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .partners li a{
+  background: url('partners.png') no-repeat 0 0;
+	width: 101px;
+	height: 100px;
+  display: block;
+  margin: 0 5px;
+}
+
+.footer .partners li a.partner1{
+  background-position: 0 0;
+	width: 100px;
+	height: 100px;
+}
+.footer .partners li a.partner2{
+  background-position: 0 -108px;
+	width: 100px;
+	height: 101px;
+}
+.footer .partners li a.partner3{
+  background-position: 0 -216px;
+	width: 100px;
+	height: 101px;
+}
+.footer .partners li a.partner4{
+  background-position: 0 -325px;
+	width: 100px;
+	height: 101px;
+}
+.footer .partners li a.partner5{
+  background-position: 0 -446px;
+	width: 100px;
+	height: 100px;
+}
+
+.footer .social_media{
+  text-align: center;
+}
+
+.footer .social_media ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer .social_media ul li a{
+  display: block;
+  margin: 0 5px;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #222222;
+  line-height: 50px;
+  border-radius: 3px;
+}
+
+.footer .social_media ul li a:hover{
+  color: #fff;
+}
+
+.footer .social_media ul li a.facebook:hover{
+  background: #3b5998; 
+}
+
+.footer .social_media ul li a.twitter:hover{
+  background: #1da1f2; 
+}
+
+.footer .social_media ul li a.instagram:hover{
+  background: #c32aa3; 
+}
+
+.footer .social_media ul li a.whatsapp:hover{
+  background: #25d366; 
+}
+
+.footer .social_media{
+  color: #adadad;
+}
+
+@media (max-width:768px) {
+  .wrapper .navbar .logo{
+    font-size: 20px;
+  }
+  .main_container {
+    padding: 25px;
+  }
+  .main_container .item{
+    flex-direction: column;
+  }
+  .main_container .item .img_holder{
+    max-width: 750px;
+    width: 100%;
+  }
+  .main_container .item .item_info{
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer .footer_menu{
+    flex-direction: column;
+    width: 220px;
+    margin: 0 auto 25px;
+  }
+  .footer .footer_menu > div{
+    margin: 10px 0;
+  }
+  .footer .partners ul li a{
+    margin: 5px;
+  }
+}
+</style>
+<body id="body">
+
+<header>
+	
+<div class="container">
+  <nav>
+    <ul>
+      <li>How to</li>
+      <li>Laptop
+        <ul class="sub-nav">
+          <li><a href= "demo.html">Which One To Pick</a></li>
+          <li><a href= "site.html">Which One To Pick</a></li>
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+        </ul>
+      </li>
+      <li>Mobile</li>
+      <li>Reviews
+        <ul class="sub-nav">
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+          <li>sub-menu</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="header"></div>
+</div>
+
+			</div>
+		</div>
+	</nav>
+</header>
+
+<section>
+	
+			
+		<div class="backround">
+			
+			<h1>Which One to Pick</h1>
+			
+		</div>
+	
+		<div class="container">
+			<div class="column">
+				<div class="main-content">
+					<div class="card">
+						<h2>Dell</h2>
+						<p>
+						Their customer service and warranty support is “barely tolerable” which is far better than all the rest except Apple. And their out-of-warranty repairs are actually even sometimes cost effective. They’re generally among the easiest to disassemble and reassemble so out of pocket repairs are cheaper, the parts are readily available and their motherboards last for 10+ years in most cases
+						
+						</p>
+						<button> see more </button>
+					</div>
+				</div>
+			</div>
+			<div class="column2">
+				<div class="midle-content">
+					<div class="card">
+						<h2>Hp</h2>
+						<p>HP laptops have a higher battery life than Dell laptops and if used well the battery life of a 
+HP laptop does not reduce significantly over the years with use. .HP generally produces entertainment-centric laptops.
+Fact is HP as a brand makes the LEAST reliable laptops. As someone who has made a living repairing computers for over 20 years I can tell you unequivocally that it’s far worse than even these stats reveal.
+
+
+ </p>
+						<button> see more </button>
+					</div>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="side-content">
+					<div class="card">
+						<h2>Asus</h2>
+						<p> They built their business supplying their super reliable motherboards to other companies, first and foremost Dell. Their laptops tend to be reliable, as the graph indicates. The problem comes in when you do have a problem. Trying to get them to honor a warranty is like pulling teeth, their company is not set up for dealing with retail customers and it shows every time you have to interact with them. For one hilarious example consider the fact that they don’t even have a spare parts department in their company! </p>
+						<button> see more </button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="simple-cover">
+			<div class="simple-card clear">
+				<h1>Things To Know</h1>
+				<p>Laptops. There’s just so many of them. But what's the best laptop for you? Is it a business notebook, a powerful gaming laptop or a Chromebook? We know the sheer number of choices can be overwhelming, which is why we made this list.
+
+We've created this handy-dandy guide so you'll know all the ins and outs of your prospective system before you make the decision to hit the buy button. From advice on choosing screen size, to selecting between an SSD and HDD to insider scoops on where to find the best prices on laptops, here are some essential tips for finding the right system for you.
+
+Here are the best gaming laptops available right now
+Our picks for the best business laptops
+Check out our best laptops under $500
+Over the course of a year, we review over 150 laptops covering every price point and use case. Whether you’re looking for a productivity workhorse, a badass gaming system or a multimedia machine to kick back and watch a movie or two, we can help you find your ideal match. 
+
+In order to make our best laptops list, the system needs to score at least 4 out of 5 stars on our reviews and deliver on the things shoppers care about most. In our evaluations, we focus on design and comfort, display quality, the keyboard and touchpad, performance, battery life and especially value.The best laptop for photo editors should be a content creator's power machine that's equipped with a zippy hard drive, stocked with artist-friendly ports and jam-packed with relevant photo editing software.
+
+And of course, as a photo editor, you'll also need a beautiful display that's capable of accurately reproducing a wide range of colors. 
+
+Best cheap photo editing laptops
+4 best photography apps for tablets
+At Laptop Mag, we've reviewed a myriad of laptops that are perfect for photo editors and we test for benchmarks that are important for photo editors, including Delta-E scores, sRGB gamut volume and graphics performance. Armed with these metrics, we've put together a list of the best photo editing laptops we've reviewed.
+
+For those who also dabble in video, check out our best video editing laptops. If you prefer to edit photos on a touch screen using your finger or a stylus then head over to our best touch screen laptops </p>
+			</div>
+
+			<div class="left-side">
+				<div class="x-card">
+					<h3>Battery Life</h3>
+					<p>A laptop with good battery life used to be mean a skinny, under-powered notebook that sacrificed performance to squeeze every extra minute out of a charge. Obviously the more powerful a system is, the more power it draws, and the less time a battery can handle supplying that power. 
+
+But research into extending battery life -- not to mention work from processor manufacturers -- has yielded huge dividends over recent years, and while the super-svelte portables and the laptops designed for basic productivity tasks (think Chromebooks) still provide the most time between charges, there are far more systems that boast solid battery life without sacrificing nearly as much performance as they once did.
+
+Because impressive battery life can be found in pretty much every category of laptops these days, we're here to help you figure out which ones actually provide the best battery life for different laptop types, from Chromebooks to 2-in-1 hybrids to even gaming laptops. Check out a dozen of our picks for laptops with the longest battery life below.      
+				
+				
+				<h1>What is the best laptop for photo editors?</h1>
+The best laptop for photo editing is the HP Spectre x360 15. One of the most striking features of this laptop is that it reproduces a whopping 256% of the sRGB color gamut, which means which means you'll get rich, luxurious colors with sharp details and contrast.
+
+Covering such a wide spectrum of the color wheel, imagine the heart-stopping visuals we've seen on the HP Spectre x360 15 when it came through our lab. The 4K OLED display on the x360 15 is absolutely stunning. Photo editing on the HP Spectre x360 15 will be an absolute treat with the laptop's discreet graphics card, which will help you run some of the most demanding photo-editing software on the market.
+
+The MSI Prestige 15 is one of the best laptops for photography. It's perfect for those who collaborate with other artistic teammates in the office. Its innovative flip-and-share mode makes the laptop an easy pick for collaborative content creators.
+
+While the HP Spectre x360 15 is our favorite laptop for photo editing, there are many photo-editing capable laptops that have came through our labs that have impressed us to the core.  Like any laptop, there may be some downsides, but depending on your needs and desires, those flaws may not be an issue for you, especially if the pros outweigh the cons. 
+
+<h1>The best laptops for photo editing you can buy now</h1>
+HP Spectre x360 15
+<br /> 
+Lenovo Thinkpad X1 Yoga (4th Gen, 2019)
+<br /> 
+Apple MacBook Pro (16-inch, 2019)
+<br /> 
+HP ZBook Studio x360 G5
+<br /> 
+Dell XPS 13 2-in-1
+<br /> 
+Microsoft Surface Pro 6
+<br /> 
+Lenovo ThinkPad X1 Extreme
+<br /> 
+Lenovo Legion Y7000
+<br /> 
+HP Envy 13 (2019)
+<br /> 
+Microsoft Surface Laptop 3
+<br /> 
+Dell XPS 15 (2019)
+<br /> 
+LG Gram 17
+<br /> 
+Asus ZenBook Pro Duo
+<br /> 
+MSI Prestige 15
+<br /> 
+				
+				
+	</p>			
+				
+				
+				
+				
+				</div>
+				
+	
+			</div>
+
+
+			<div class="right-side">
+				<div class="x-card">
+					<h3>Apple MacBook Pro 13-inch</h3>
+					<img src="12.jpeg">
+				</div>
+				<div class="x-card">
+					<h3>HP Envy 13t</h3>
+					<img src="13.jpeg">
+				</div>
+				
+				
+			</div>
+
+
+				</div>
+				
+				
+				
+				<div class= "footer">
+        <div class="footer_menu">
+           <div class="col_1">
+              <div class="title">
+                Company  
+              </div>  
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+           </div>
+           <div class="col_2">
+             <div class="title">
+                Help & Support 
+              </div>  
+              <ul>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Call Center</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+           </div>
+           <div class="col_3">
+             <div class="title">
+                Services  
+              </div>  
+              <ul>
+                <li><a href="#">Business Consultancy</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Market Analysis</a></li>
+                <li><a href="#">Web Development</a></li>
+              </ul>
+           </div>
+           <div class="col_4">
+             <div class="title">
+                Solutions  
+              </div>  
+              <ul>
+                <li><a href="#">Facilities Services</a></li>
+                <li><a href="#">Workplace Staffing</a></li>
+                <li><a href="#">Project Management</a></li>
+                <li><a href="#">Wordpress Management</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="partners">
+            <ul>
+                <li><a class="partner1" href="#"></a></li>
+                <li><a class="partner2" href="#"></a></li>
+                <li><a class="partner3" href="#"></a></li>
+                <li><a class="partner4" href="#"></a></li>
+                <li><a class="partner5" href="#"></a></li>  
+            </ul>
+        </div>
+        <div class="social_media">
+            
+            <p>Copyright © Coding Market</p>
+        </div>
+    </div>
+</div>	
+
+
+</div>
+
+			
+
+</section>
+
+	
+
+</body>
+</html>
