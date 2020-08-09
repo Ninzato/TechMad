@@ -89,7 +89,19 @@ body{
 	background-color: #fafafa;
 }
 
+p{
+	color: #000;
+}
+
+li a{
+	color: #000;
+}
+
 a{
+	color: #000;
+}
+
+h1,h2,h3,h4,h5,h6{
 	color: #000;
 }
 
@@ -157,6 +169,12 @@ h6 {font-size: .672em;}
 	justify-content: space-between;
 }
 
+/*.sticky {
+  position: fixed;
+  top: 0 !important;
+  z-index: 999999 !important;
+}*/
+
 .categories-right{
 	display: flex;
 	justify-content: flex-end;
@@ -198,56 +216,30 @@ h6 {font-size: .672em;}
 	max-height: 100%;
 }
 
-.banner-des{
-	width: 50%;
-	position: absolute;
-	top: 30%;
-	left: 25%;
+.carousel-caption h1, h3{
+	color: #fff;
 }
 
-.banner-des a{
-	text-decoration: none;
-	line-height: 50px;
-}
-
-.banner-des h1:hover{
+.carousel-caption h3:hover{
 	text-shadow: 2px 2px 2px #000;
 }
 
-.banner-des h1{
+.carousel-caption h1, h3{
 	font-family: Arvo;
 	font-weight: 300;
 	color: #fff;
 	font-size: 45px;
 }
 
-.banner-des h4,h1,p{
-	margin: 25px 0;
-	text-align: center;
+.carousel-caption a:hover{
+	text-decoration: none;
 }
-.meta, .banner-des h4{
+
+.carousel-caption h3{
 	font-family: Helvetica;
 	font-weight: 300;
-	font-size: 14px;
 	color: #fff;
 }
-
-.meta > span {
-	padding-right: 10px;
-}
-
-.meta span::after{
-	display: inline-block;
-	content: "|";
-	color: #fff;
-	font-size: 13px;
-	padding-left: 10px;
-}
-
-.meta span:last-child::after{
-	display: none;
-}
-
 										/*BODY-MAIN*/
 .main-post-header{
 	text-align: center;
@@ -375,4 +367,54 @@ h6 {font-size: .672em;}
 .social img{
 	width: 100%;
 	z-index: -500;
+}
+
+.dropbutton{
+	padding: 0;
+	height: 19px;
+}
+
+.dropmenu {
+	float: left;
+	overflow: hidden;
+}
+
+.dropmenu .dropbutton{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropmenu:hover .dropbutton{
+	background-color: white;
+}
+
+.dropmenu-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropmenu-content a{
+	float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropmenu-content a:hover{
+	background-color: #ddd;
+}
+
+.dropmenu:hover .dropmenu-content{
+	display: block;
 }

@@ -357,3 +357,64 @@ hr{
 	z-index: -500;
 }
 
+
+.btn-read-more{
+
+	height: 40px;
+	width: 120px;
+	background-color: rgb(248, 248, 248);
+	color: rgb(4, 0, 253);
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: "2px";
+}
+
+.dropbutton{
+	padding: 0;
+	height: 19px;
+}
+
+.dropmenu {
+	float: left;
+	overflow: hidden;
+}
+
+.dropmenu .dropbutton{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropmenu:hover .dropbutton{
+	background-color: white;
+}
+
+.dropmenu-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropmenu-content a{
+	float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropmenu-content a:hover{
+	background-color: #ddd;
+}
+
+.dropmenu:hover .dropmenu-content{
+	display: block;
+}

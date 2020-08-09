@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -87,6 +87,10 @@ body{
 	font-family: Helvetica;
 	color: #000;
 	background-color: #fafafa;
+}
+
+a{
+	color: #000;
 }
 
 h1 {font-size: 2em;}
@@ -181,115 +185,91 @@ h6 {font-size: .672em;}
 	color: #4EC2FF;
 }
 
-.banner{
+
+										/*BODY-MAIN*/
+hr{
+	border: 0.5px solid rgba(0,0,0,0.2);
 	position: relative;
-	margin-top: 135px;
+	top: 150px;
+	box-shadow: 1px 1px 1px #fafafa;
+}
+
+.article, .sidebar{
+	padding: 0;
+	margin-top: 12%;
+}
+
+.gap{
+	width: 96%;
+	background-color: #fff;
+}
+
+.sidebar > .gap > h2{
+	padding: 20px 20px 0 20px;
+	margin: 0 0 0 0;
+}
+
+.article img{
 	width: 100%;
-	display: block;
-	text-align: center;
+	margin-bottom: 24px;
 }
 
-.banner img{
-	max-width: 100%;
-	max-height: 100%;
+.article p,h2, h1, h5{
+	width: 90%;
+	line-height: 24px;
+	margin: 0 auto 24px;
 }
 
-.banner-des{
-	width: 50%;
-	position: absolute;
-	top: 25%;
-	left: 25%;
+.article h2{
+	font-weight: 300;
 }
 
-.banner-des h1:hover{
-	text-shadow: 2px 2px 2px #000;
-}
-
-.banner-des h1{
+.article h1{
+	line-height: 35px;
 	font-family: Arvo;
 	font-weight: 300;
-	color: #fff;
-	font-size: 45px;
 }
 
-.banner-des h1{
-	margin: 25px 0;
-	text-align: center;
+.article h5{
+	color: rgba(0,0,0,0.4);
 }
 
-											/*MAIN*/
-
-h1{
-  text-align: center;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+.article h5:first-of-type{
+	color: #4EC2FF;
 }
 
-.column h3,p{
+.article h1:first-of-type, .article h5:first-of-type{
+	margin: 0 auto 15px;
+}
+
+.recent-post{
+	padding: 0 20px;
+	background-color: #fff;
+}
+
+.recent-post img{
+	width: 30%;
+	margin-right: 5px;
+}
+
+.recent-post-des{
 	line-height: 24px;
-	margin-bottom: 10px;
+	margin: 0 0;
+	margin-left: 5px;
+	width: 60%;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.recent-post-des h4:hover{
+	color: #4EC2FF;
 }
 
-input[type=text],textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.recent-post-des p{
+	font-size: 12px;
+	color: rgba(0,0,0,0.4);
 }
 
-input[type=email]{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.contact{
-  text-align:left;
-}
-
-.contact p{
-	font-size: 16px;
-}
-
-.socialmed img{
-  padding: 3px;
-}
-.socialmed{
-  text-align: center;
-}
-
-.socialmed h4{
-	margin-bottom: 10px;
-}
-
-.socialmed a{
-	border-radius: 50%;
-}
-
-.socialmed a:hover{
-	box-shadow: 2px 2px 2px #000;
-}
-
-button{
-  float: right;
-}
 
 										/*FOOTER*/
-
 .page-footer {
 	float: left;
 	width: 100%;
@@ -375,6 +355,10 @@ button{
 .social img{
 	width: 100%;
 	z-index: -500;
+}
+/* Tambahan */
+p {
+	text-align: justify;
 }
 
 .dropbutton{
